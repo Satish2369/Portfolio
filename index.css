@@ -1,0 +1,978 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+color:white;
+scrollbar-color: #0a42da;
+
+
+}
+ 
+html,body{
+width:100%;
+height:100%;
+
+
+}
+#html{
+  scrollbar-color: #0a42da;
+}
+@font-face {
+  font-family:"Aeonik" ;
+  src: url(./Aeonik-Regular.ttf);
+}
+
+@font-face {
+  font-family:"Neue" ;
+  src: url(3856NeueMachina.woff2);
+}
+@font-face {
+  font-family:"Beverly Hills" ;
+  src: url(./651bfa13da53cdd302b0a2d3_BeverlyHillsTypeface-Regular.woff);
+}
+
+@font-face {
+  font-family:"Roslindale" ;
+  src: url(Roslindale-DisplayCondensedLightItalic.ttf);
+}
+
+@font-face {
+  font-family:"nimbus" ;
+  src: url(nimbus-sans-l.regular.otf);
+}
+
+
+
+
+
+#main{
+  overflow: hidden;
+  background-color:black;
+}
+#loader .box{
+    overflow:hidden;
+    width: fit-content;
+    /* background-color: red; */
+}
+
+#loader{
+   height: 100vh;
+   width: 100vw;
+   background-color:#000000;
+   position: fixed;
+   text-transform: uppercase;
+   z-index: 9999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 13vw; */
+  
+}
+.box h1{
+  font-family: "Summer loving";
+  font-weight: 400;
+  font-size: 10vw;
+  z-index: 999;
+}
+#cover{
+  
+  overflow: hidden;
+  /* background-color: red; */
+
+}
+#downer{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+#page1{
+ 
+    height: 110vh;
+    width: 100vw;
+    background-color:#000;
+    position: relative;
+    padding: 1vw;
+    overflow: hidden;
+   
+
+}
+
+
+#follower{
+position: absolute;
+border-radius: 50%;
+background-color: white;
+height:50px;
+width:50px;
+box-shadow:0 0 15px #fff,0 0 50px #fff,0 0 100px #fff,0 0 200px #fff,0 0 300px #fff ;
+transition: left 0.2s ease-out, top 0.2s ease-out;
+mix-blend-mode: difference;
+z-index: 2;
+}
+
+
+
+#name{
+font-size: 2vw;
+margin: 0.5vw;
+font-family: "Neue Montreal";
+color: #E85C0D;
+
+
+}
+
+
+#clock{
+  height: 2vw;
+  width: 5vw;
+  background-color: white;
+  margin-right: 5vw;
+  margin-top: 1vw;
+ 
+
+}
+
+#nav-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#Main-text h1{
+font-size: 12vw;
+color: #fdebdf;
+font-family: "Orbitron";
+z-index: 55;
+}
+
+.Front{
+  margin-top:8vw;
+  margin-left: 5vw;
+ 
+}
+
+
+.Dev{
+  margin-left: 30vw;
+}
+
+
+
+#Sound {
+  cursor: pointer;
+  height: 3vw;
+  width: 6vw;
+  border: 1px solid #E85C0D;
+  border-radius: 6px;
+  margin:2vw;
+  margin-left: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #E85C0D;
+  bottom: 8%;
+  font-family: "Neue Montreal";
+  gap: 1vw;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+#navbar{
+  
+background-color: #E85C0D;
+position: absolute;
+top: 3%;
+left: 50%;
+transform: translate(-50%);
+height: 4vw;
+width: 45vw;
+border-radius: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 24;
+}
+#nav{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 2vw;
+}
+
+#navbar a{
+  color: #000000;
+font-family: "Inter Tight";
+text-decoration: none;
+transition: all 0.4 ease-out;
+font-weight: 600;
+font-size: 2vw;
+
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+
+
+#home-border-bottom{
+
+  height: 5px;
+  width: 100%;
+ background-color:pink;
+  border-radius: 2px;
+  
+  
+  
+  }
+  #about-border-bottom{
+  
+  height: 5px;
+  width: 100%;
+
+  border-radius: 2px;
+  
+  
+  
+  }
+  #service-border-bottom{
+  
+  height: 5px;
+  width: 100%;
+  /* background-color: #F2613F; */
+  border-radius: 2px;
+  
+  
+  
+  }
+  #projects-border-bottom{
+  
+  height: 5px;
+  width: 100%;
+  /* background-color: #97E7E1; */
+  border-radius: 2px;
+  
+  
+  
+  }
+
+  #contact-border-bottom{
+
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    
+    
+    
+    }
+
+
+#sidebar{
+position: absolute;
+
+top: 30%;
+left: 0%;
+color: white;
+width: 200px;
+height: 200px;
+z-index: 20;
+
+}
+#sidebar a{
+    text-decoration: none;
+}
+
+#linkedin {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 268px;
+    height: 40px;
+    width: 40px;
+    background: #E85C0D;
+    transition: width 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  #linkedin i,#insta i,#github i,#gmail i {
+    font-size: 2em;
+    padding-left: 4px;
+    cursor: pointer;
+    
+  }
+  
+  #sidebar a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 11px;
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  
+  #github{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    top: 226px;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: #E85C0D;
+    transition: width 0.4s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #github:hover {
+    cursor: pointer;
+    width: 200px;
+  }
+  #github:hover a {
+    visibility: visible;
+    transition: all ease-in 0.8s;
+  }
+  #linkedin:hover {
+    cursor: pointer;
+    width: 200px;
+  }
+  #linkedin:hover a {
+    visibility: visible;
+    transition: all ease-in 1s;
+  }
+
+
+  #insta{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top: 310px;
+    background: #E85C0D;
+    transition: width 0.4s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #gmail{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top: 353px;
+    background: #E85C0D;
+    transition: width 0.4s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #gmail:hover {
+    cursor: pointer;
+    width: 200px;
+  }
+  #gmail:hover a {
+    visibility: visible;
+    transition: all ease-in 0.8s;
+  }
+  #insta:hover {
+    cursor: pointer;
+    width: 200px;
+  }
+  #insta:hover a {
+    visibility: visible;
+    transition: all ease-in 0.8s;
+  }
+  
+
+#page2{
+  position: relative;
+
+height:100vh;
+width: 100vw;
+background-color:black ;
+}
+
+
+
+
+
+
+#page2-skills-marquee{
+margin-top: 8vw;
+background-color: #E85C0D; 
+display: flex;
+padding: 2vw 0vw;
+margin-bottom: 4vw;
+overflow: hidden;
+}
+
+.marquee{
+
+text-transform: uppercase;
+
+font-family: Neue ;
+display: flex;
+align-items: center;
+gap: 3vw;
+padding: 0 1.5vw;
+transform: translateX(-100%);
+}
+
+.marquee {
+  flex-shrink: 0;
+}
+.marquee img{
+  height: 3vw;
+  
+}
+
+
+#about-heading{
+padding-top: 3vw;
+  font-family: "Roslindale";
+
+}
+
+ #about-heading h1{
+  font-size: 9vw;
+  text-align: center;
+  color: #E85C0D;
+ } 
+
+
+#about-para{
+  margin: 3vw auto;
+
+}
+
+#about-para p{
+   width: 55vw;
+   margin: 2vw auto;
+   font-size: 2vw;
+   font-family: "Neue Montreal";
+   text-align: justify;
+   letter-spacing: 2px;
+
+}
+
+.intro span {
+  color: #333;
+  transition: 0.4s;
+  opacity: 0;
+  text-shadow: 0px 0px 5px #fff,0px 0px 10px #fff,0px 0px 20px #fff;
+}
+
+
+
+
+
+
+#page3{
+  padding: 5vw 0vw;
+  height: 180vh;
+  width: 100vw;
+  background-color: black;
+  font-family: "nimbus";
+  margin-bottom: 5vw;
+}
+
+
+.skill-heading{
+  text-transform: uppercase;
+  overflow: hidden;
+  height: 12vw;
+  width: fit-content;
+  padding: 1vw;
+  font-size: 4vw;
+  margin-left: 24vw;
+ 
+  /* background-color: #e161e8; */
+}
+
+.skill-heading h1{
+  color: #E85C0D;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Neue Montreal";
+ 
+}
+
+
+
+
+.skill-section{
+  margin-top: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
+
+.elem{
+  border-top: 1px solid #161748;
+  display: flex;
+
+  align-items: center;
+  
+  position: relative;
+  
+}
+
+.elem h1{
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 4vw;
+  opacity: 0.5;
+  cursor: pointer;
+  filter: blur(4px);
+  margin-left: 4vw;
+
+}
+
+.orange{
+
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  background-color:#E85C0D;
+margin: 0vw 1.2vw;
+opacity: 0;
+     
+
+
+}
+.last{
+  border-bottom: 2px solid #161748;
+}
+
+
+
+.elem img{
+  position: absolute;
+  
+  height: 20vw;
+  width: 20vw;
+  z-index: 99;
+  opacity: 0;
+  border-radius: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page4{
+height: 300vh;
+width: 100vw;
+background-color:black;
+font-family: "Swansea";
+
+}
+
+
+
+#projHeading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
+}
+
+
+
+#projHeading h1{
+  font-size: 8vw;
+  font-family: "Orbitron";
+  color:lawngreen;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1vw;
+
+}
+
+
+#project-Containers{
+
+width: 100%;
+height: 100%;
+/* background-color: red; */
+padding: 6vw;
+display: flex;
+flex-direction: column;
+gap: 5vw;
+
+}
+
+#pc1{
+  /* background-color: #e161e8; */
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+#project1{
+  margin-top: 2vw;
+   height: 35vw;
+   width: 45vw;
+   background-color: #161748;
+   border-radius: 10px;
+   padding: 3vw
+  
+   
+}
+
+
+#project1 img{
+  object-fit: cover;
+  height:29vw ;
+  width:39vw ;
+  border-radius: 20px;
+}
+
+
+
+
+
+#pb1{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1vw;
+  margin-top: 15vw;
+  margin-right: 2vw;
+  
+}
+
+
+#liveButton{
+
+  height: 4vw;
+  width: 12vw;
+  background-color:  #161748;
+  border-radius: 50px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#githubButton{
+
+  height: 4vw;
+  width: 12vw;
+  background-color:  #161748;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+#project-Containers a{
+  text-decoration: none;
+
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+
+
+
+#pc2{
+  margin-top: 5vw;
+  /* background-color: green; */
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#project2{
+  height: 35vw;
+   width: 45vw;
+   background-color:#E85C0D;
+   border-radius: 10px;
+   padding: 3vw;
+}
+
+
+#project2 img{
+    object-fit: cover;
+    height:29vw ;
+    width:39vw ;
+    border-radius: 20px;
+}
+
+
+#pb2{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-top: 15vw;
+  margin-right: 4vw;
+
+
+
+
+
+}
+
+
+
+#liveButton2{
+
+  height: 4vw;
+  width: 12vw;
+  background-color: #E85C0D;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+
+#githubButton2{
+
+  height: 4vw;
+  width: 12vw;
+  background-color: #E85C0D;
+  border-radius: 50px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+#Project-cover{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+#project-Containers span{
+  color: #000;
+}
+
+#ptext{
+ 
+/* background-color: #7776B3; */
+text-align: center;
+  width: 28vw;
+  height: 10vw;
+  margin-top: 1vw;
+   color: white;
+  font-size: 2vw;
+  font-family: "Orbitron";
+}
+
+.all-project-container{
+
+  margin: 6vw auto;
+
+}
+
+.all-projects{
+  height: 5vw;
+  width: 18vw;
+  background-color: #E85C0D;
+  
+  font-family: "Neue Montreal";
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.all-projects a{
+  color: white;
+}
+
+
+
+
+
+#page5{
+height: 110vh;
+width: 100vw;
+
+background-color:#000;
+position: relative;
+cursor: pointer;
+
+}
+
+   
+
+.contact-us{
+  display: flex;
+  
+  
+  gap: 4vw;
+}
+
+
+.contactus-image{
+ margin-top: 8vw;
+ margin-left: 4vw;
+  height: 35vw;
+  width: 45vw;
+  
+ 
+
+
+}
+
+.contactus-image img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+.getin{
+
+  margin-top: 6vw;
+}
+
+
+
+
+
+
+
+
+.getin h1{
+  font-family: "Aeonik";
+  font-size: 5.5vw;
+  text-shadow: #E85C0D 0 0 12px, #007bb5 0 0 25px, #161748 0 0 25px, #E85C0D 0 0 25px;
+  
+  
+}
+
+.getin h3{
+  font-family: "Neue Montreal";
+}
+
+.text1 {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+
+}
+
+
+.text2{
+  font-size: 1.5vw;
+
+}
+
+
+
+.extra-stuff{
+  display: flex;
+  gap: 1vw;
+  margin: 1.5vw;
+}
+
+.extra-stuff i{
+  font-size: 2vw;
+}
+.extra-stuff a{
+  text-decoration: none;
+}
+
+.over{
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  padding: 0.5vw;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.my-gmail{
+  width: fit-content;
+  padding: 0.4vw 1vw;
+  border-radius: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.my-gmail a{
+  font-size: 2vw;
+}
+
+
+.white-line{
+  height: 3px;
+  width: 42vw;
+  background-color: white;
+}
+
+.animated-gif {
+  margin-left:8vw ;
+}
