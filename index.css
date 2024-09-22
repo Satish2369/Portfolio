@@ -105,36 +105,50 @@ align-items: center;
     position: relative;
     padding: 1vw;
     overflow: hidden;
+    cursor: none;
    
 
 }
 
 
-#follower{
+#follower {
 position: absolute;
 border-radius: 50%;
-background-color: white;
-height:50px;
-width:50px;
-box-shadow:0 0 15px #fff,0 0 50px #fff,0 0 100px #fff,0 0 200px #fff,0 0 300px #fff ;
+background-color: #E85C0D;
+height:15px;
+width:15px;
+box-shadow:0 0 15px #E85C0D,0 0 50px #E85C0D ;
 transition: left 0.2s ease-out, top 0.2s ease-out;
 mix-blend-mode: difference;
 z-index: 2;
+
 }
 
 
 
 #name{
 font-size: 2vw;
-margin: 0.5vw;
+margin-left: 2.5vw;
+margin-top:0.8vw;
+
 font-family: "Neue Montreal";
 color: #E85C0D;
 
 
 }
 
+.overlay{
+  position: absolute;
+  height: 5vw;
+  width: 8vw;
+  z-index: 3;
+  top: 0;
+background-color: transparent;
+/* background-color: red; */
 
-#clock{
+}
+
+.clock{
   height: 2vw;
   width: 5vw;
   background-color: white;
@@ -144,9 +158,15 @@ color: #E85C0D;
 
 }
 
-#nav-top{
+.header-container{
   display: flex;
   justify-content: space-between;
+}
+
+.first-h1{
+  height: 20vw;
+  width: fit-content;
+  overflow: hidden;
 }
 
 
@@ -154,19 +174,73 @@ color: #E85C0D;
 font-size: 12vw;
 color: #fdebdf;
 font-family: "Orbitron";
-z-index: 55;
+z-index: 4;
+ background-image: url(https://i.pinimg.com/originals/05/7a/b2/057ab2724ab5d83bd1a7fd22bf91a71b.gif);
+background-position: center;
+color: transparent;
+background-size: cover;
+-webkit-background-clip: text;
+background-clip: text; 
+
 }
 
 .Front{
   margin-top:8vw;
-  margin-left: 5vw;
+  margin-left:6vw;
  
 }
 
 
-.Dev{
-  margin-left: 30vw;
+
+
+.overlay1-container{
+  
+position: relative;
+
+height: 14vw;
+width: 70vw;
+/* background-color: red; */
+margin-left: 7vw;
+
 }
+
+.overlay1{
+  position: absolute;
+  height: 14vw;
+  width: 63vw;
+  top: 0;
+  left: 5vw;
+  
+  
+  z-index: 5;
+}
+
+.overlay2-container{
+  
+  position: relative;
+  margin-left: 30vw;
+  height: 17vw;
+  width: 65vw;
+  
+  
+  }
+
+ 
+
+
+  .overlay2{
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    height: 13vw;
+    width: 63vw;
+    
+  
+    background-color:transparent;
+    z-index: 5;
+  }
+
+
 
 
 
@@ -186,7 +260,7 @@ z-index: 55;
   bottom: 8%;
   font-family: "Neue Montreal";
   gap: 1vw;
- 
+  z-index: 4;
 }
 
 
@@ -912,14 +986,14 @@ cursor: pointer;
   font-family: "Neue Montreal";
 }
 
-.text1 {
+.txt1 {
   margin-top: 2vw;
   font-size: 1.5vw;
 
 }
 
 
-.text2{
+.txt2{
   font-size: 1.5vw;
 
 }

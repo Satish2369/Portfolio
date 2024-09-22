@@ -33,6 +33,37 @@ tl = gsap.timeline();
     y:"-100%",
     display:"none",
     duration: 0.4,
+    onComplete: function (){
+
+      gsap.from(".text",{
+       
+         x:"-120%",
+         duration:2,
+         delay:0.5,
+         ease:"power1.out"
+
+
+
+
+
+      })
+
+      gsap.from(".text2",{
+       
+         x:"120%",
+         duration:2,
+         delay:0.5,
+         ease:"power3.out"
+
+
+
+
+
+      })
+      
+
+
+    }
     
   })
 
@@ -42,146 +73,152 @@ tl = gsap.timeline();
 
 
 
-function smoothScrolling(){
-
-
-
-
-
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-  });
-    
-
-
-}
-
-
 
 
 
 function page1(){
 
-
-
- 
-  
   document.addEventListener("mousemove",function(event){
   
-  let mouseX= event.clientX;
+
+
+    gsap.to(light,{
+
+   x:event.clientX,
+   y:event.clientY,
+   duration:0.8,
+   ease:"back.out"
+
+   })
+
+
+   })
   
-  let mouseY= event.clientY;
 
 
 
-gsap.to(light,{
 
-x:event.clientX,
-y:event.clientY,
-duration:0.8,
-ease:"back.out"
+
+ document.querySelector(".overlay").addEventListener("mousemove",function (){
+
+      gsap.to(light,{
+      backgroundColor:"#E85C0D",
+      boxShadow:"0px 0px 0px #E85C0D",
+      scale:8,
+      ease:"bounce.out"
+      })
+
+
+ })
+
+ 
+ document.querySelector(".overlay").addEventListener("mouseleave",function (){
+
+   gsap.to(light,{
+
+  backgroundColor:"#E85C0D",
+  boxShadow:"0 0 15px #E85C0D,0 0 50px #E85C0D,",
+  scale:1,
+  ease:"power1.out"
+
+  })
+
+
+
+})
+
+
+document.querySelector(".overlay1").addEventListener("mousemove",function (){
+
+  gsap.to(light,{
+  backgroundColor:"white",
+ 
+  scale:8,
+  ease:"bounce.out"
+  })
+
+
+})
+
+document.querySelector(".overlay2").addEventListener("mousemove",function (){
+
+  gsap.to(light,{
+  backgroundColor:"white",
+ 
+  scale:8,
+  ease:"bounce.out"
+  })
+
+
+})
+
+document.querySelector(".overlay1").addEventListener("mouseleave",function (){
+
+  gsap.to(light,{
+  backgroundColor:"#E85C0D",
+  boxShadow:"0px 0px 0px #E85C0D",
+  scale:1,
+  ease:"bounce.out"
+  })
+
+
+})
+
+document.querySelector(".overlay2").addEventListener("mouseleave",function (){
+
+  gsap.to(light,{
+  backgroundColor:"#E85C0D",
+  boxShadow:"0px 0px 0px #E85C0D",
+  scale:1,
+  ease:"bounce.out"
+  })
+
 
 })
 
 
 
 
-  let distanceX = mouseX - text.offsetLeft -text.offsetWidth/2;
+  function sound(){
+
+
+
+  let playing = false;
+  toggle.addEventListener("click",function(){
   
-  let distanceY = mouseY - text.offsetTop -text.offsetHeight/2;
   
+  if(playing){
   
-  let newShadow = '';
-  for(var i=0;i<150;i++){
-  
-  
-  let shadowX = -distanceX *(i/200);
-  let shadowY = -distanceY *(i/200);
-  
-  let opacity = 1- (i/100);
-  newShadow += (newShadow ? ',' : '') + shadowX + 'px ' + shadowY + 'px 0 rgba(33,33,33,' + opacity +')'
-  
+    audio.pause();
+    toggle.textContent=  "Sound Off";
   
   }
- 
-
-
-
-  let distanceX2 = mouseX - text2.offsetLeft -text2.offsetWidth/2;
   
-  let distanceY2 = mouseY - text2.offsetTop -text2.offsetHeight/2;
-  
-
-
-
-  let newShadow2 = '';
-  for(var i=0;i<150;i++){
-  
-  
-  let shadowX2 = -distanceX2 *(i/200);
-  let shadowY2 = -distanceY2 *(i/200);
-  
-  let opacity = 1- (i/100);
-  newShadow2 += (newShadow2 ? ',' : '') + shadowX2 + 'px ' + shadowY2 + 'px 0 rgba(33,33,33,' + opacity +')'
-  
-  
+  else{
+    audio.play();
+    toggle.textContent= "Sound On";
   }
-  text2.style.textShadow = newShadow2;
-  text.style.textShadow = newShadow;
-
-
-
-
+  
+  playing=!playing;
+  
+  
+  
+  
+  
   
   })
+  audio.addEventListener('ended', () => {
+    playing = false;
+    toggle.textContent = 'Sound Off';
+  });
   
-
-
-
-function sound(){
-
-
-
-let playing = false;
-toggle.addEventListener("click",function(){
-
-
-if(playing){
-
-  audio.pause();
-  toggle.textContent=  "Sound Off";
-
-}
-
-else{
-  audio.play();
-  toggle.textContent= "Sound On";
-}
-
-playing=!playing;
-
-
-
-
-
-
-})
-audio.addEventListener('ended', () => {
-  playing = false;
-  toggle.textContent = 'Sound Off';
-});
-
-
-
-
-}
-
-
-
-sound();
-
-
+  
+  
+  
+     }
+  
+     sound();
+  
 
 }
 
@@ -521,9 +558,6 @@ gsap.from("#project1",{
       
         });
 
-
-
-
 }
 
 
@@ -537,14 +571,15 @@ gsap.from("#project1",{
 
 
 
-
-function page5(){
+ 
+  function page5(){
 
   
 gsap.to("#page4",{
 
   backgroundColor:"black",
   ease:"power1.out",
+
 
 scrollTrigger:{
 
@@ -553,67 +588,8 @@ scroller:"body",
 start:"top 30%",
 end:"center 60%",
 scrub:true,
-markers:false,onUpdate: function () {
-  const page4BgColor = window.getComputedStyle(document.querySelector("#page4")).backgroundColor;
-
-  // Check if the background color is black
-
-
-
-
-
-
-
-
-  if (page4BgColor === "rgb(0, 0, 0)") {
-    document.querySelectorAll("#ptext span").forEach(function (span){
-        span.style.color = "orange";
-   
-    })
-   
-    document.querySelectorAll(".dark").forEach(function(div) {
-      Object.assign(div.style, {
-          backgroundColor: "black",
-          border: "1px solid white",
-          
-      });
-  });
-  
-  } 
-  
-  else {
-    document.querySelectorAll("#ptext span").forEach(function (span){
-      span.style.color = "black";
-  })
-  document.querySelectorAll(".dark").forEach(function(div) {
-    Object.assign(div.style, {
-        backgroundColor: "#4F1787",
-        border: "1px solid #4F1787",
-        
-    });
-});
-
-
-  
-
-  }
-
-
-
-
-}
-
-}
-
-
-
-
-})
-
-
-  
-
-}
+markers:false,
+     }})}
 
 
 
@@ -631,7 +607,7 @@ markers:false,onUpdate: function () {
 
 
 loader();
-//  smoothScrolling();
+  
 page1();
 page2()
 marquee();
