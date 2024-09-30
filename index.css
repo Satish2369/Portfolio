@@ -23,7 +23,7 @@ height:100%;
 }
 
 @font-face {
-  font-family:"Neue" ;
+  font-family:"Neue";
   src: url(3856NeueMachina.woff2);
 }
 @font-face {
@@ -41,8 +41,15 @@ height:100%;
   src: url(nimbus-sans-l.regular.otf);
 }
 
+@font-face {
+  font-family: "Summer Loving";
+  src: url("Summer-Loving-Regular.otf");
+}
 
-
+@font-face {
+  font-family: "Orbitron";
+  src: url();
+}
 
 
 #main{
