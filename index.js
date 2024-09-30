@@ -74,6 +74,28 @@ tl = gsap.timeline();
 
 
 
+    function smoothScrolling() {
+      
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+    direction: 'vertical',  
+    gestureDirection: 'vertical',
+    infinite: false,
+    smoothTouch: false,
+   });
+
+// Update the scroll position with each animation frame
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+    }
+
 
 
 function page1(){
@@ -134,7 +156,7 @@ document.querySelector(".overlay1").addEventListener("mousemove",function (){
   backgroundColor:"white",
  
   scale:8,
-  ease:"bounce.out"
+  ease:"power1.out"
   })
 
 
@@ -146,7 +168,7 @@ document.querySelector(".overlay2").addEventListener("mousemove",function (){
   backgroundColor:"white",
  
   scale:8,
-  ease:"bounce.out"
+  ease:"elastic.out"
   })
 
 
@@ -158,7 +180,7 @@ document.querySelector(".overlay1").addEventListener("mouseleave",function (){
   backgroundColor:"#E85C0D",
   boxShadow:"0px 0px 0px #E85C0D",
   scale:1,
-  ease:"bounce.out"
+  ease:"power3.out"
   })
 
 
@@ -170,7 +192,7 @@ document.querySelector(".overlay2").addEventListener("mouseleave",function (){
   backgroundColor:"#E85C0D",
   boxShadow:"0px 0px 0px #E85C0D",
   scale:1,
-  ease:"bounce.out"
+  ease:"power2.out"
   })
 
 
@@ -589,7 +611,11 @@ start:"top 30%",
 end:"center 60%",
 scrub:true,
 markers:false,
-     }})}
+     }}
+
+
+     
+    )}
 
 
 
@@ -607,13 +633,14 @@ markers:false,
 
 
 loader();
-  
+smoothScrolling();
 page1();
 page2()
 marquee();
 
 page3();
 page4();
+
 page5();
 
 
