@@ -26,10 +26,6 @@ height:100%;
   font-family:"Neue";
   src: url(3856NeueMachina.woff2);
 }
-@font-face {
-  font-family:"Beverly Hills" ;
-  src: url(./651bfa13da53cdd302b0a2d3_BeverlyHillsTypeface-Regular.woff);
-}
 
 @font-face {
   font-family:"Roslindale" ;
@@ -47,8 +43,8 @@ height:100%;
 }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url();
+  font-family: "Neue Montreal";
+  src: url("Neue-Montreal.ttf");
 }
 
 
