@@ -19,18 +19,25 @@ height:100%;
 }
 @font-face {
   font-family:"Aeonik" ;
-  src: url(./Aeonik-Regular.ttf);
+  src: url("Aeonik-Regular.ttf");
 }
-
+@font-face {
+  font-family:"Neue";
+  src: url("3856NeueMachina.woff2");
+}
+@font-face {
+  font-family:"clash" ;
+  src: url("ClashGrotesk-Medium.ttf");
+}
 
 @font-face {
   font-family:"Roslindale" ;
-  src: url(Roslindale-DisplayCondensedLightItalic.ttf);
+  src: url('Roslindale-DisplayCondensedLightItalic.ttf');
 }
 
 @font-face {
   font-family:"nimbus" ;
-  src: url(nimbus-sans-l.regular.otf);
+  src: url('nimbus-sans-l.regular.otf');
 }
 
 @font-face {
@@ -76,7 +83,7 @@ height:100%;
   
 }
 .box h1{
-  font-family:"Summer Loving","nimbus";
+  font-family:"Summer Loving","clash";
   font-weight: 400;
   font-size: 10vw;
   z-index: 999;
@@ -513,7 +520,7 @@ overflow: hidden;
 
 text-transform: uppercase;
 
-font-family: Neue ;
+font-family:"Neue";
 display: flex;
 align-items: center;
 gap: 3vw;
