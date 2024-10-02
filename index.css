@@ -22,10 +22,6 @@ height:100%;
   src: url(./Aeonik-Regular.ttf);
 }
 
-@font-face {
-  font-family:"Neue";
-  src: url(3856NeueMachina.woff2);
-}
 
 @font-face {
   font-family:"Roslindale" ;
@@ -80,7 +76,7 @@ height:100%;
   
 }
 .box h1{
-  font-family: "Summer loving";
+  font-family:"Summer Loving","nimbus";
   font-weight: 400;
   font-size: 10vw;
   z-index: 999;
