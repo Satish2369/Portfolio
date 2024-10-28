@@ -16,35 +16,42 @@ body {
 }
 @font-face {
   font-family: "Aeonik";
-  src: url("Aeonik-Regular.ttf");
+  src: url("Aeonik-Regular.ttf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Neue";
-  src: url("3856NeueMachina.woff2");
+  src: url("3856NeueMachina.woff2") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "clash";
-  src: url("ClashGrotesk-Medium.ttf");
+  src: url("ClashGrotesk-Medium.ttf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roslindale";
-  src: url("Roslindale-DisplayCondensedLightItalic.ttf");
+  src: url("Roslindale-DisplayCondensedLightItalic.ttf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "nimbus";
-  src: url("nimbus-sans-l.regular.otf");
+  src: url("nimbus-sans-l.regular.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Summer Loving";
-  src: url("Summer-Loving-Regular.otf");
+  src: url("Summer-Loving-Regular.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("Neue-Montreal.ttf");
+  src: url("Neue-Montreal.ttf") format("opentype");
+  font-display: swap;
 }
 
 #main {
@@ -76,7 +83,7 @@ body {
   align-items: center;
 }
 .box h1 {
-  font-family: "Summer Loving", "clash";
+  font-family: "Summer Loving","Roslindale";
   font-weight: 400;
   font-size: 10vw;
   z-index: 999;
@@ -120,7 +127,6 @@ body {
   font-size: 2vw;
   margin-left: 2.5vw;
   margin-top: 0.8vw;
-
   font-family: "Neue Montreal";
   color: #e85c0d;
 }
@@ -249,11 +255,11 @@ body {
   gap: 2vw;
 }
 
+
 #navbar a {
   color: #000000;
-  font-family: "Inter Tight";
+  font-family: "Inter Tight","Neue Montreal";
   text-decoration: none;
-  transition: all 0.4 ease-out;
   font-weight: 600;
   font-size: 2vw;
 }
@@ -261,7 +267,7 @@ body {
 #home {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+ 
 }
 
 .home-border-bottom {
@@ -412,7 +418,7 @@ body {
 .marquee {
   text-transform: uppercase;
 
-  font-family: "Neue";
+  font-family: "Neue","Neue Montreal";
   display: flex;
   align-items: center;
   gap: 3vw;
@@ -429,7 +435,7 @@ body {
 
 #about-heading {
   padding-top: 3vw;
-  font-family: "Roslindale";
+  font-family: "Roslindale","Neue Montreal";
 }
 
 #about-heading h1 {
@@ -446,7 +452,7 @@ body {
   width: 55vw;
   margin: 2vw auto;
   font-size: 2vw;
-  font-family: "Neue Montreal";
+  font-family: "Neue Montreal","Inter Tight";
   text-align: justify;
   letter-spacing: 2px;
 }
@@ -483,7 +489,7 @@ body {
   color: #e85c0d;
   text-align: center;
   cursor: pointer;
-  font-family: "Neue Montreal";
+  font-family: "Neue Montreal","Inter Tight";
 }
 
 .skill-section {
@@ -768,12 +774,12 @@ body {
   font-family: "Neue Montreal";
 }
 
-.txt1 {
+.text1 {
   margin-top: 2vw;
   font-size: 1.5vw;
 }
 
-.txt2 {
+.text2 {
   font-size: 1.5vw;
 }
 

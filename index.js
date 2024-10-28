@@ -2,10 +2,6 @@ let name = document.querySelector("#Sm");
 let light = document.querySelector("#follower");
 let skillHeading = document.querySelector("#skill-heading");
 let h1 = document.querySelector("#linkContainer h1");
-
-let text = document.querySelector(".text");
-let text2 = document.querySelector(".text2");
-
 let audio = document.querySelector(" #audio audio");
 let toggle = document.querySelector("#Sound .music");
 
@@ -30,14 +26,14 @@ function loader() {
     display: "none",
     duration: 0.4,
     onComplete: function () {
-      gsap.from(".text", {
+      gsap.from(".Front", {
         x: "-120%",
         duration: 2,
         delay: 0.5,
         ease: "power1.out",
       });
 
-      gsap.from(".text2", {
+      gsap.from(".Dev", {
         x: "120%",
         duration: 2,
         delay: 0.5,
@@ -338,7 +334,7 @@ function page4() {
     },
   });
 
-  gsap.from(".project-cover1", {
+  gsap.from(".project1", {
     x: "140%",
     duration: 3,
     delay: 1,
@@ -368,7 +364,7 @@ function page4() {
     },
   });
 
-  gsap.from(".project-cover2", {
+  gsap.from(".project2", {
     x: "-140%",
     duration: 3,
     delay: 1,
