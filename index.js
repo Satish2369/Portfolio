@@ -137,26 +137,7 @@ function page1() {
       });
     });
 
-  function sound() {
-    let playing = false;
-    toggle.addEventListener("click", function () {
-      if (playing) {
-        audio.pause();
-        toggle.textContent = "Sound Off";
-      } else {
-        audio.play();
-        toggle.textContent = "Sound On";
-      }
-
-      playing = !playing;
-    });
-    audio.addEventListener("ended", () => {
-      playing = false;
-      toggle.textContent = "Sound Off";
-    });
-  }
-
-  sound();
+ 
 }
 
 function page2() {
@@ -396,13 +377,55 @@ function page5() {
   });
 }
 
+function sound() {
+  let playing = false;
+  toggle.addEventListener("click", function () {
+    if (playing) {
+      audio.pause();
+      toggle.textContent = "Sound Off";
+    } else {
+      audio.play();
+      toggle.textContent = "Sound On";
+    }
+
+    playing = !playing;
+  });
+  audio.addEventListener("ended", () => {
+    playing = false;
+    toggle.textContent = "Sound Off";
+  });
+}
+
+function killAllScrollTriggers() {
+  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+}
+
+
+
+// Function to initialize animations based on screen size
+function initializeAnimations() {
+  if (window.innerWidth > 400) {
+   
+  
+    smoothScrolling();
+    page1();
+    page2();
+ 
+    page3();
+    page4();
+    page5();
+  } else {
+
+    killAllScrollTriggers();
+  }
+}
 loader();
-smoothScrolling();
-page1();
-page2();
+sound();
 marquee();
 
-page3();
-page4();
+initializeAnimations();
 
-page5();
+// Add event listener to monitor screen resize
+window.addEventListener("resize", () => {
+  initializeAnimations();
+});

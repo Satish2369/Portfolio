@@ -446,6 +446,7 @@ body {
 
 #about-para {
   margin: 3vw auto;
+  
 }
 
 #about-para p {
@@ -840,6 +841,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 3vw !important;
+    
    }
   .box{
     display: flex;
@@ -849,6 +851,7 @@ body {
   .box h1{
     font-size:18vw;
     margin-left: 5vw;
+    color: rgb(246, 51, 51);
   }
   #downer{
    padding: 0;
@@ -860,7 +863,7 @@ body {
 
 
 #page1{
-  height: 100vh;
+  height: 60vh;
 }
 
 #navbar{
@@ -874,13 +877,103 @@ body {
   width: 22vw;
   height: 10vw;
   padding: 1vw;
+  
 }
 
 .overlay1-container{
    margin-top: 50vw;
-  
+}
+
+#Main-text{
+  position: absolute;
+  top: -20%;
  
+}
+.overlay2-container{
+  width: fit-content;
+}
+#sidebar{
+  display: none;
+}
+#page2{
+  height: 50vh;
+}
+#page3{
+  height: 70vh;
+}
+#page4{
+  height: 70vh;
 }
 
 
+
+
+.elem h1{
+  filter: blur(0px);
+}
+
+
+#projHeading{
+  margin-top: 25vw;
+}
+
+#about-heading{
+  margin-bottom: 6vw;
+}
+#about-heading h1{
+   font-size: 15vw;
+}
+
+ #about-para  .intro{
+  width: 95vw;
+  text-align: justify;
+  font-size: 4vw;
+  letter-spacing: 0px;
+
+
+}
+.marquee h1{
+  font-size: 3vw;
+}
+.skill-heading h1{
+  font-size: 10vw;
+}
+
+.my-work{
+  font-size: 1vw;
+}
+
+
+#page5{
+  height: 30vh;
+}
+.contactus-image img{
+  display: none;
+}
+
+.getin h1{
+  font-size: 9vw;
+}
+.getin h3{
+  font-size: 4vw;
+}
+.last-linkedin-icon{
+  height: 6vw;
+  width: 6vw;
+}
+.last-insta-icon{
+  height: 6vw;
+  width: 6vw;
+
+}
+.last-insta-icon{
+}
+
+.animated-gif img{
+  visibility: hidden;
+}
+.white-line{
+  width: 80vw;
+  margin: 4vw 0vw;
+}
 }
