@@ -269,11 +269,9 @@ function page3() {
     });
   });
 }
-
 function page4() {
   gsap.to("#page4", {
     ease: "power3.out",
-
     scrollTrigger: {
       trigger: "#page4",
       start: "top top",
@@ -284,7 +282,8 @@ function page4() {
     },
   });
 
-  gsap.from("#projHeading", {
+  // Animating projects heading
+  gsap.from("#projects-heading", {
     x: "80%",
     duration: 3,
     delay: 1,
@@ -300,7 +299,8 @@ function page4() {
     },
   });
 
-  gsap.from("#project1", {
+  // Animating Food Mania project image
+  gsap.from("#food-mania .project-image", {
     x: "-120%",
     duration: 3,
     delay: 1,
@@ -315,7 +315,8 @@ function page4() {
     },
   });
 
-  gsap.from(".project1", {
+  // Animating Food Mania project details
+  gsap.from("#food-mania .project-buttons,#food-mania .project-title", {
     x: "140%",
     duration: 3,
     delay: 1,
@@ -330,9 +331,10 @@ function page4() {
     },
   });
 
-  gsap.from("#project2", {
+  // Animating Filmax project image
+  gsap.from("#filmax .project-image", {
     x: "140%",
-    duration: 3,
+    duration: 4,
     delay: 1,
     ease: "power1.out",
     scrollTrigger: {
@@ -345,7 +347,8 @@ function page4() {
     },
   });
 
-  gsap.from(".project2", {
+  // Animating Filmax project details
+  gsap.from("#filmax .project-buttons ,#filmax .project-title ", {
     x: "-140%",
     duration: 3,
     delay: 1,
@@ -360,6 +363,7 @@ function page4() {
     },
   });
 }
+
 
 function page5() {
   gsap.to("#page4", {
