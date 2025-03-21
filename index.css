@@ -213,7 +213,6 @@ body {
   right: 2vw;
   height: 13vw;
   width: 63vw;
-
   background-color: transparent;
   z-index: 5;
 }
@@ -280,10 +279,19 @@ body {
   border-radius: 2px;
 }
 
+.smaller-device-text {
+  display: none;
+}
+.smaller-device-image{
+  display: none;
+}
+.icons-smaller-devices{
+  display: none;
+}
+
 
 #sidebar {
   position: absolute;
-
   top: 30%;
   left: 0%;
   color: white;
@@ -315,6 +323,12 @@ body {
   font-size: 2em;
   padding-left: 4px;
   cursor: pointer;
+}
+
+
+#bars i{
+  font-size: 2em;
+  display: none;
 }
 
 #sidebar a {
@@ -401,6 +415,7 @@ body {
   transition: all ease-in 0.8s;
 }
 
+
 #page2 {
   position: relative;
 
@@ -420,18 +435,16 @@ body {
 
 .marquee {
   text-transform: uppercase;
-
   font-family: "Neue","Neue Montreal";
   display: flex;
   align-items: center;
   gap: 3vw;
   padding: 0 1.5vw;
   transform: translateX(-100%);
-}
-
-.marquee {
   flex-shrink: 0;
 }
+ 
+
 .marquee img {
   height: 3vw;
 }
@@ -442,9 +455,14 @@ body {
 }
 
 #about-heading h1 {
-  font-size: 9vw;
+  font-size: 12vw;
   text-align: center;
-  color: #e85c0d;
+  background-image: url('https://images.unsplash.com/photo-1716842788403-3f64f3a6cb3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 #about-para {
@@ -484,15 +502,17 @@ body {
   width: fit-content;
   padding: 1vw;
   font-size: 4vw;
-  margin-left: 24vw;
-
-  /* background-color: #e161e8; */
+  margin-left: 21vw;
 }
 
 .skill-heading h1 {
-  color: #e85c0d;
+  font-size: 10vw;
   text-align: center;
-  cursor: pointer;
+  background-image: url('https://images.unsplash.com/photo-1716842788403-3f64f3a6cb3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Neue Montreal","Inter Tight";
 }
 
@@ -506,9 +526,7 @@ body {
 .elem {
   border-top: 1px solid #161748;
   display: flex;
-
   align-items: center;
-
   position: relative;
 }
 
@@ -536,7 +554,6 @@ body {
 
 .elem img {
   position: absolute;
-
   height: 20vw;
   width: 20vw;
   z-index: 99;
@@ -560,12 +577,17 @@ body {
 }
 
 .section-title {
-  font-size: 8vw;
+  font-size: 10vw;
   font-family: "Orbitron";
-  color: lawngreen;
   text-transform: uppercase;
   text-align: center;
   padding-top: 1vw;
+  font-weight: bold;
+  background-image: url('https://ik.imagekit.io/sheryians/BackEnd%20Donation/maskImage_W7a6T_MXGY.png?updatedAt=1715856788796');
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+
 }
 
 /* Project Container */
@@ -580,6 +602,7 @@ body {
 
 /* Project 1 */
 #food-mania {
+  
   padding: 2vw;
   display: flex;
   justify-content: space-between;
@@ -637,7 +660,7 @@ body {
 #filmax .project-image {
   height: 35vw;
   width: 45vw;
-  background-color: #e85c0d;
+  background-color: #2b2c7e;
   border-radius: 10px;
   padding: 3vw;
 }
@@ -723,9 +746,10 @@ body {
 
 .contactus-image {
   margin-top: 8vw;
-  margin-left: 4vw;
-  height: 35vw;
+  margin-left: 2vw;
+  height: 40vw;
   width: 45vw;
+ 
 }
 
 .contactus-image img {
@@ -735,27 +759,37 @@ body {
 }
 
 .getin {
-  margin-top: 6vw;
+  margin-top: 12vw;
 }
 
 .getin h1 {
   font-family: "Aeonik";
   font-size: 5.5vw;
-  text-shadow: #e85c0d 0 0 12px, #007bb5 0 0 25px, #161748 0 0 25px,
-    #e85c0d 0 0 25px;
+  background-image: url('https://images.unsplash.com/photo-1716842788403-3f64f3a6cb3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Neue Montreal","Inter Tight";
 }
 
 .getin h3 {
   font-family: "Neue Montreal";
+  background-image: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .text1 {
-  margin-top: 2vw;
-  font-size: 1.5vw;
+  margin-top: 0.5vw;
+  font-size: 2vw;
 }
 
 .text2 {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
 .extra-stuff {
@@ -776,21 +810,34 @@ body {
   width: 4vw;
   border-radius: 50%;
   padding: 0.5vw;
-  border: 1px solid white;
+  border: 1px solid #2b2c7e;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url('https://images.unsplash.com/photo-1641160858304-6aded85fa2c4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
 }
 
 .my-gmail {
   width: fit-content;
   padding: 0.4vw 1vw;
   border-radius: 100px;
-  border: 1px solid white;
+  border: 1px solid #161748;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1641160858304-6aded85fa2c4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+ 
 }
 
 .my-gmail a {
@@ -800,154 +847,255 @@ body {
 .white-line {
   height: 3px;
   width: 42vw;
-  background-color: white;
-}
-
-.animated-gif {
-  margin-left: 8vw;
+  background-color: #161748;
 }
 
 
 
 @media (max-width:480px){
 
-   .loader{
-    display: flex;
-    justify-content: center;
-    margin-top: 3vw !important;
-    
-   }
-  .box{
-    display: flex;
-    justify-content: center;
-  
+  .loader{
+   display: flex;
+   justify-content: center;
+   margin-top: 3vw !important;
+   
   }
-  .box h1{
-    font-size:18vw;
-    margin-left: 5vw;
-    color: rgb(246, 51, 51);
-  }
-  #downer{
-   padding: 0;
-  }
+ .box{
+   display: flex;
+   justify-content: center;
+ 
+ }
+ .box h1{
+   font-size:18vw;
+   margin-left: 5vw;
+   color: rgb(246, 51, 51);
+ }
+ #downer{
+  padding: 0;
+ }
 #downer svg {
-     height: auto;
-     width: 100% !important;
+    height: auto;
+    width: 100% !important;
 }
 
 
 #page1{
-  height: 60vh;
+ height: 95vh;
+ 
 }
-
+#follower{
+ display: none;
+}
+#nav-top{
+ z-index: 10;
+}
 #navbar{
-  display: none;
+  background-color: #000; 
+}
+.home-border-bottom{
+ display: none;
 }
 
-#name{
-  font-size:4vw;
+#bars i {
+display: block;
+margin-left: 80vw;
+color: #e85c0d;
+
 }
-#Sound{
-  width: 22vw;
-  height: 10vw;
-  padding: 1vw;
+.smaller-device-image{
+ display: inline-block;
+ margin-top: 6vw;
+ height: 80vw;
+ width: 80vw;
+ margin-left: 8vw;
+
+}
+
+.smaller-device-image img{
+ border-radius: 50%;
+ object-fit: cover;
+ height: 100%;
+ width: 100%;
+}
+.smaller-device-text {
+ padding-top: 5vw;
+ display: flex;
+ flex-direction: column;
+ 
   
 }
 
-.overlay1-container{
-   margin-top: 50vw;
+.smaller-device-text h1 {
+ font-size: 2.9rem;
+ font-weight: bold;
+ font-family: "Neue Montreal";
+ text-align: center;
+ margin-left: 4vw;
+
 }
 
-#Main-text{
-  position: absolute;
-  top: -20%;
+.image-text{
+ 
+ font-weight: bold;
+ background-image: url('https://ik.imagekit.io/sheryians/three.js/mask_5gcMWG8mG.jpg');
+ background-clip: text;
+ color: transparent;
+ -webkit-background-clip: text; 
+ display: inline-block; 
+}
+
+.icons-smaller-devices{
+ display: flex;
+ justify-content: center;
+
+}
+.icons-smaller-devices i{
+ font-size: 2.4em;
+ margin: 4vw;
+}
+
+#name{
+ font-size:8vw;
+}
+#home ,#about, #Contact ,#Projects, #Skills{
+    display: none;
+}
+#Sound{
+ width: 22vw;
+ height: 10vw;
+ padding: 1vw;
  
 }
-.overlay2-container{
-  width: fit-content;
+
+.overlay1-container{
+ display: none;
 }
+
+.overlay2-container{
+ display: none;
+}
+
+
+
+
 #sidebar{
-  display: none;
+ display: none;
 }
 #page2{
-  height: 50vh;
+ height: 60vh;
+ 
 }
-#page3{
-  height: 70vh;
-}
-#page4{
-  height: 70vh;
-}
-
-
-
 
 .elem h1{
-  filter: blur(0px);
+ filter: blur(0px);
 }
 
 
 #projHeading{
-  margin-top: 25vw;
+ margin-top: 30vw;
 }
 
 #about-heading{
-  margin-bottom: 6vw;
+ margin-bottom: 6vw;
 }
 #about-heading h1{
-   font-size: 15vw;
+  font-size: 16vw;
 }
 
- #about-para  .intro{
-  width: 95vw;
-  text-align: justify;
-  font-size: 4vw;
-  letter-spacing: 0px;
-
+#about-para  .intro{
+ width: 85vw;
+ text-align: justify;
+ font-size: 4.7vw;
+ letter-spacing: 0px;
+ 
 
 }
+
+
 .marquee h1{
-  font-size: 3vw;
+ font-size: 3vw;
+}
+#page2-skills-marquee{
+ margin-bottom: 10vw;
+}
+#page3{
+ height: 100vh;
+}
+
+
+.skill-heading {
+ height: 22vw;
+ margin-left: 10vw;
+
+
 }
 .skill-heading h1{
-  font-size: 10vw;
+ margin-right: 2vw;
+ font-size: 13vw;
 }
 
-.my-work{
-  font-size: 1vw;
+.elem h1{
+
+ font-size: 7vw;
 }
+
+.section-title{
+ font-size: 17vw;
+ font-weight: bold;
+ background-image: url('https://ik.imagekit.io/sheryians/BackEnd%20Donation/maskImage_W7a6T_MXGY.png?updatedAt=1715856788796');
+ background-clip: text;
+ color: transparent;
+ -webkit-background-clip: text;
+ display: inline-block; 
+}
+
+#page4{
+ height: 70vh;
+}
+
+
+
+
 
 
 #page5{
-  height: 30vh;
+ height: 30vh;
 }
 .contactus-image img{
-  display: none;
+ display: none;
 }
 
 .getin h1{
-  font-size: 9vw;
+ font-size: 11vw;
 }
 .getin h3{
-  font-size: 4vw;
+ font-size: 4.2vw;
+ margin: 1vw;
 }
 .last-linkedin-icon{
-  height: 6vw;
-  width: 6vw;
+ display: none;
 }
 .last-insta-icon{
-  height: 6vw;
-  width: 6vw;
+ display: none;
+}
 
-}
-.last-insta-icon{
-}
 
 .animated-gif img{
-  visibility: hidden;
+ visibility: hidden;
+}
+
+.my-gmail{
+ width: 60vw;
+ padding: 0vw;
+ height: 7vw;
+ background-color: #e85c0d;
+}
+.my-gmail a{
+ font-size: 3vw;
 }
 .white-line{
-  width: 80vw;
-  margin: 4vw 0vw;
+ width: 80vw;
+ margin: 4vw 0vw;
 }
+
 }
