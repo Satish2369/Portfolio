@@ -1050,12 +1050,39 @@ color: #e85c0d;
 }
 
 #page4{
- height: 70vh;
+ height: 80vh;
 }
 
+#project-container{
+  margin-left: 15vw;
 
+}
+#projects-heading{
+  margin-top: 17vw;
+}
 
+#food-mania{
+  display: flex;
+  flex-direction: column;
+}
 
+#food-mania .project-buttons{
+  display: none;
+}
+.project-title{
+  display: none;
+}
+
+#filmax{
+  display: flex;
+  flex-direction: column;
+}
+#filmax .project-buttons{
+  display: none;
+}
+.all-projects-container{
+  margin-left: 17vw;
+}
 
 
 #page5{
@@ -1066,7 +1093,7 @@ color: #e85c0d;
 }
 
 .getin h1{
- font-size: 11vw;
+ font-size: 6vw;
 }
 .getin h3{
  font-size: 4.2vw;
